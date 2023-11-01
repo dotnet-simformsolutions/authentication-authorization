@@ -1,4 +1,4 @@
-<img src="https://github.com/jil1710/readmedemo/assets/125335932/123ae210-4eb3-466b-8395-348f41546036" width="250px" height="150px"/>
+<img src="/images/274858875-123ae210-4eb3-466b-8395-348f41546036.png" width="250px" height="150px"/>
 
 # Authentication And Authorization
 
@@ -15,7 +15,7 @@
 
 - **How does cookie authentication in ASP.NET Core work?**
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/b219f13f-472b-4998-9b34-f726faeede42)
+  ![image](/images/274854202-b219f13f-472b-4998-9b34-f726faeede42.png)
 
   - User requests URL from the server
   - Based on the access set server will either return the page if it’s a public page or will return the login page if its a secured page i.e. asking the user to login to access the secured page
@@ -27,40 +27,40 @@
 
   - First Create ASP.Net Core Project And Add LoginModel and User model for role base authorization:
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/ea52c3c1-02a8-40d9-b6ed-ae6c0073dadd)
+    ![image](/images/274855328-ea52c3c1-02a8-40d9-b6ed-ae6c0073dadd.png)
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/c52c93b8-70e0-414d-8811-1c60cddd7956)
+    ![image](/images/274855627-c52c93b8-70e0-414d-8811-1c60cddd7956.png)
 
   - Now seed some user into List<User> or you can use database or identity framework to validate or storing of user. Here for i am using list of User static data as storage.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/a4a85237-21ab-40f6-920d-6f1f2579237d)
+    ![image](/images/274856348-a4a85237-21ab-40f6-920d-6f1f2579237d.png)
 
   - After that Cookie Authentication scheme and Authorization policy into program.cs file
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/98fef953-8926-49d2-8a9a-c50a968dc116)
+    ![image](/images/274856672-98fef953-8926-49d2-8a9a-c50a968dc116.png)
 
   - Add This two middleware in same order as below :
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/991e8ad1-1881-4a46-81b4-a52af98c016a)
+    ![image](/images/274856978-991e8ad1-1881-4a46-81b4-a52af98c016a.png)
 
   - Add login api that validate the user and authenticate the user then create the session by storing the cookie.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/0dc20e57-bed6-46e2-bcae-15c627b4de7a)
+    ![image](/images/274857385-0dc20e57-bed6-46e2-bcae-15c627b4de7a.png)
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/7bb81bd9-39df-4454-baf1-432102f682a5)
+    ![image](/images/274858224-7bb81bd9-39df-4454-baf1-432102f682a5.png)
 
 
   - Then Create secret route that is only access by `Administrition` role and authenticated user.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/823ea762-c6f5-4a8d-8aba-0a3d1938bd5b)
+    ![image](/images/274857635-823ea762-c6f5-4a8d-8aba-0a3d1938bd5b.png)
 
-  Click here to see the example : [Cookie Authentication](https://github.com/jil1710/Authentication-Authorization/tree/master/CookieAuthentication)
+  Click here to see the example : [Cookie Authentication](/main/CookieAuthentication)
 
 # JWT and Multiple Scheme Authentication
 
 - JSON Web Token is an open standard (RFC 7519) that defines a safe, compact, and self-contained, secured way for transmission of information between a sender and a receiver through a URL, a POST parameter, or inside the HTTP Header. It should be noted that the information to be transmitted securely between two parties is represented in JSON format and it is cryptographically signed to verify its authenticity. JWT is typically used for implementing authentication and authorization in Web applications. Because JWT is a standard, all JWTs are tokens but the reverse is not true. You can work with JSON Web Tokens in .NET, Python, Node.js, Java, PHP, Ruby, Go, JavaScript, etc.
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/830f1ed7-c025-48b6-b5fe-760709c2dc50)
+  ![image](/images/274860298-830f1ed7-c025-48b6-b5fe-760709c2dc50.png)
 
 - JWT is represented as a combination of three base64url encoded parts concatenated with period ('.') characters and comprises the following three sections:
 
@@ -116,12 +116,12 @@
 
   - After that add LoginModel and User model for role base authorization:
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/2ae59ebf-4bc2-4afc-bf09-6be3d43bdee5)
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/d930936a-2416-432e-a128-ebb798d1a8f1)
+    ![image](/images/274868698-2ae59ebf-4bc2-4afc-bf09-6be3d43bdee5.png)
+    ![image](/images/274868714-d930936a-2416-432e-a128-ebb798d1a8f1.png)
 
   - Now seed some user into List<User> or you can use database or identity framework to validate or storing of user. Here for i am using list of User static data as storage.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/a4a85237-21ab-40f6-920d-6f1f2579237d)
+    ![image](/images/274856348-a4a85237-21ab-40f6-920d-6f1f2579237d.png)
 
   - Configuring JWT in the AppSettings File ( appsettings.json ) by creating the section of JWT as shown in below:
 
@@ -136,33 +136,33 @@
     
   - Configure Authentication with Bearer and JWT in addition also configure cookie authentication because in parallel we understant how to use multiple authentication scheme.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/93674099-c059-4dde-a4a1-41623235d923)
+    ![image](/images/274870082-93674099-c059-4dde-a4a1-41623235d923.png)
 
   - Add policy for both the scheme
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/4112df1b-d38b-43ce-92c7-73bd5d42f7ce)
+    ![image](/images/274870726-4112df1b-d38b-43ce-92c7-73bd5d42f7ce.png)
 
   - Add This two middleware in same order as below :
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/991e8ad1-1881-4a46-81b4-a52af98c016a)
+    ![image](/images/274856978-991e8ad1-1881-4a46-81b4-a52af98c016a.png)
 
   - Add login route that use jwt scheme and return access token
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/ef65ef04-55ed-41af-a192-954de25128ba)
+    ![image](/images/274871040-ef65ef04-55ed-41af-a192-954de25128ba.png)
 
   - Also create secret route that is only access by jwt access token schem by add jwt policy which we created above.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/62262c89-4678-4e96-b81d-06e3a56dc240)
+    ![image](/images/274871294-62262c89-4678-4e96-b81d-06e3a56dc240.png)
 
   - Similarlly, add login route that use cookie authentication scheme and authenticate user.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/664b87f5-f566-4b15-86c2-4134e2785f52)
+    ![image](/images/274871586-664b87f5-f566-4b15-86c2-4134e2785f52.png)
 
   - Also create secret route that is only access by cookie schem by add cookie policy which we created above.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/d6bb7cba-7866-4998-ba4e-7f5c4410b036)
+    ![image](/images/274871880-d6bb7cba-7866-4998-ba4e-7f5c4410b036.png)
 
-  - Click here to see the example : [Jwt and Multiple Atuhentication scheme](https://github.com/jil1710/Authentication-Authorization/tree/master/MultipleAuthScheme)
+  - Click here to see the example : [Jwt and Multiple Atuhentication scheme](/main/MultipleAuthScheme)
 
 
 # Customs Authorize attribute
@@ -171,13 +171,13 @@
 
 - Let's create `RoleRequired` attribute. So to creat custom authoriza attribute then implement the `TypeFilterAttribute` and pass the type of Iauthorization filter so below :
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/df8575e5-7195-4e32-a9e7-dee4c6bfffb9)
+  ![image](/images/274874012-df8575e5-7195-4e32-a9e7-dee4c6bfffb9.png)
 
 - Now use `RoleRequired` Attribute if user has claim that we are passing in constructor then they get access  to the resource.
 
-  ![image](https://github.com/jil1710/readmedemo/assets/125335932/7ce01381-2ad5-4d38-b1f9-6548a1b6f89c)
+  ![image](/images/274874687-7ce01381-2ad5-4d38-b1f9-6548a1b6f89c.png)
 
-- Click here to see the example : [Custom Authorize Attribute](https://github.com/jil1710/Authentication-Authorization/tree/master/CustomAuthorizeAttribute)
+- Click here to see the example : [Custom Authorize Attribute](/main/CustomAuthorizeAttribute)
 
 # Using Identity Server
 
@@ -198,23 +198,23 @@
  
     **1. Identity Resource :** The data like UserId, phone number, email which has something unique to a particular identity/user are the Identity Resource. Add the following code to IdentityConfigration class.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/8e9c0eb6-2f0e-4f46-aa15-437da215f295)
+    ![image](/images/274877693-8e9c0eb6-2f0e-4f46-aa15-437da215f295.png)
 
     **2. Add API Resource :** Let’s define the API Resource with Scopes and API Secrets. Ensure to hash this secret code. This secret hashed code will be saved internal within IdentityServer4..
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/f64b53b8-75e6-475a-a55d-05302c5e0b1e)
+    ![image](/images/274877870-f64b53b8-75e6-475a-a55d-05302c5e0b1e.png)
 
     **3. Add Clients :** Let’s define the clients by giving proper clientId and name. We also have to define who will be granted access to our protected resource. In our case it is GetProduct. Add following code to IdentityConfigration class.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/5eb0dbf4-dcb0-4327-a07d-9456bae2153d)
+    ![image](/images/274878320-5eb0dbf4-dcb0-4327-a07d-9456bae2153d.png)
 
     **4. Registering IdentityServer4 in ASP.NET Core :**
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/c6236ad2-b86f-48c3-bb18-2b3312929bc4)
+    ![image](/images/274878449-c6236ad2-b86f-48c3-bb18-2b3312929bc4.png)
 
     **5. Add Identity Server Middle**
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/514af3dc-189f-4695-a390-ed5b4c5bde0e)
+    ![image](/images/274878668-514af3dc-189f-4695-a390-ed5b4c5bde0e.png)
 
 
 - **Now Setup the Client Side and redirect to authentication page of IdentityServer4.**
@@ -226,7 +226,7 @@
 
   - After that register OpenIdConnect in program.cs file
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/bcd29e8f-a2bc-437d-96d7-481d48a8ef71)
+    ![image](/images/274879513-bcd29e8f-a2bc-437d-96d7-481d48a8ef71.png)
 
     - Aurthority : our identity server url.
     - client id : add client which we created in identityserver configuration.
@@ -235,23 +235,23 @@
    
   - After that create aurthorize route and try to hit that route it will redirect to identity server login after authenticated and in back channel it will generating the token and redirect to that secret authorize page.
 
-    ![image](https://github.com/jil1710/readmedemo/assets/125335932/872ae9cc-ffa6-42c1-853e-a3fc7e69eefd)
+    ![image](/images/274880810-872ae9cc-ffa6-42c1-853e-a3fc7e69eefd.png)
 
   - Output :
 
     - See the below image and also the url when we hit secret tab then it will redirect to identity server if we are already authenticated then it show the authorize page.
       
-        ![image](https://github.com/jil1710/readmedemo/assets/125335932/08a193cb-39d9-4c10-85d8-a2a84058fdce)
+        ![image](/images/274881171-08a193cb-39d9-4c10-85d8-a2a84058fdce.png)
  
     - After entering the valid credential and hit the login button then it will authenticate successfull and then redirect back to secret authoriza page.
 
-        ![image](https://github.com/jil1710/readmedemo/assets/125335932/c99aab6a-bb37-4bda-9cc2-df33b8f7e05d)
+        ![image](/images/274881321-c99aab6a-bb37-4bda-9cc2-df33b8f7e05d.png)
 
-        ![image](https://github.com/jil1710/readmedemo/assets/125335932/7d9a1c7e-9a6f-4e8f-a863-6502b366ddad)
+        ![image](/images/274881403-7d9a1c7e-9a6f-4e8f-a863-6502b366ddad.png)
 
-- Click here to see the example : [Client Side Code](https://github.com/jil1710/Authentication-Authorization/tree/master/Client_MVC)
+- Click here to see the example : [Client Side Code](/main/Client_MVC)
 
-- Click here to see the example : [Identity Server Code](https://github.com/jil1710/Authentication-Authorization/tree/master/OpenIdServer)
+- Click here to see the example : [Identity Server Code](/main/OpenIdServer)
  
 
 
