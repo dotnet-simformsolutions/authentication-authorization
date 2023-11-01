@@ -54,7 +54,7 @@
 
     ![image](/images/274857635-823ea762-c6f5-4a8d-8aba-0a3d1938bd5b.png)
 
-  Click here to see the example : [Cookie Authentication](/main/CookieAuthentication)
+  Click here to see the example : [Cookie Authentication](https://github.com/dotnet-simformsolutions/authentication-authorization/tree/main/CookieAuthentication)
 
 # JWT and Multiple Scheme Authentication
 
@@ -162,7 +162,7 @@
 
     ![image](/images/274871880-d6bb7cba-7866-4998-ba4e-7f5c4410b036.png)
 
-  - Click here to see the example : [Jwt and Multiple Atuhentication scheme](/main/MultipleAuthScheme)
+  - Click here to see the example : [Jwt and Multiple Atuhentication scheme](https://github.com/dotnet-simformsolutions/authentication-authorization/tree/main/MultipleAuthScheme)
 
 
 # Customs Authorize attribute
@@ -177,7 +177,7 @@
 
   ![image](/images/274874687-7ce01381-2ad5-4d38-b1f9-6548a1b6f89c.png)
 
-- Click here to see the example : [Custom Authorize Attribute](/main/CustomAuthorizeAttribute)
+- Click here to see the example : [Custom Authorize Attribute](https://github.com/dotnet-simformsolutions/authentication-authorization/tree/main/CustomAuthorizeAttribute)
 
 # Using Identity Server
 
@@ -249,9 +249,9 @@
 
         ![image](/images/274881403-7d9a1c7e-9a6f-4e8f-a863-6502b366ddad.png)
 
-- Click here to see the example : [Client Side Code](/main/Client_MVC)
+- Click here to see the example : [Client Side Code](https://github.com/dotnet-simformsolutions/authentication-authorization/tree/main/Client_MVC)
 
-- Click here to see the example : [Identity Server Code](/main/OpenIdServer)
+- Click here to see the example : [Identity Server Code](https://github.com/dotnet-simformsolutions/authentication-authorization/tree/main/OpenIdServer)
  
 
 
